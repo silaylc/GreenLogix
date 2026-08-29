@@ -6,7 +6,7 @@ GreenLogix is an engineering solution and decision support dashboard designed to
 **Authors:** Satı Sıla Yolcu, Gökberk Kaan Tapan, Merve Kızılırmak
 
 ## 🎯 Core Objectives & SDG Alignment
-The project bridges the gap between advanced optimization methods and real-world delivery constraints[cite: 2]. It is directly aligned with the United Nations Sustainable Development Goals:
+The project bridges the gap between advanced optimization methods and real-world delivery constraints. It is directly aligned with the United Nations Sustainable Development Goals:
 * **SDG 11 (Sustainable Cities and Communities):** Reduces unnecessary vehicle mileage and urban air pollution to support more planned movement of delivery fleets.
 * **SDG 13 (Climate Action):** Integrates climate change measures by treating fuel consumption and estimated CO2 emissions as primary components of the route-determining stages.
 
