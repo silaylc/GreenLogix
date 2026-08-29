@@ -1,13 +1,9 @@
-# 🌍 GreenLogix: Sustainable Vehicle Routing & Decision Support System
-
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit)
-![Optimization](https://img.shields.io/badge/Optimization-Simulated_Annealing-0052CC?style=for-the-badge)
+# 🌍 GreenLogix: Sustainable Vehicle Routing & Decision Support Syste
 
 ## 📌 Project Overview
-GreenLogix is an engineering solution and decision support dashboard designed to optimize delivery routes by balancing operational efficiency, economic cost, environmental sustainability, and legal constraints[cite: 2]. Developed as a technical product, it addresses the Vehicle Routing Problem (VRP) under modern urban logistics conditions[cite: 2].
+GreenLogix is an engineering solution and decision support dashboard designed to optimize delivery routes by balancing operational efficiency, economic cost, environmental sustainability, and legal constraints. Developed as a technical product, it addresses the Vehicle Routing Problem (VRP) under modern urban logistics conditions[cite: 2].
 
-**Authors:** Satı Sıla Yolcu, Gökberk Kaan Tapan, Merve Kızılırmak[cite: 2].
+**Authors:** Satı Sıla Yolcu, Gökberk Kaan Tapan, Merve Kızılırmak
 
 ## 🎯 Core Objectives & SDG Alignment
 The project bridges the gap between advanced optimization methods and real-world delivery constraints[cite: 2]. It is directly aligned with the United Nations Sustainable Development Goals:
@@ -32,8 +28,8 @@ Rather than treating routing as a pure shortest-path problem, GreenLogix evaluat
 ## 📊 Experimental Validation & Business Impact
 Experimental results demonstrate that the GreenLogix optimization logic provides meaningful improvements over standard baseline delivery routes[cite: 2].
 * **Distance Reduction:** Total travel distance was reduced by 1.69% in the simulated test scenario[cite: 2].
-* **Sustainability Impact:** The optimized route reduced fuel consumption by 1.56% and carbon emissions by 1.53%[cite: 2].
-* **Efficiency:** Overall travel time was improved by 1.35% while maintaining full operational feasibility with zero penalty costs[cite: 2].
+* **Sustainability Impact:** The optimized route reduced fuel consumption by 1.56% and carbon emissions by 1.53%.
+* **Efficiency:** Overall travel time was improved by 1.35% while maintaining full operational feasibility with zero penalty costs.
 
 ## 🚀 How to Run the Project
 1. Clone this repository:
