@@ -71,11 +71,37 @@ differences come from the routing logic alone:
 Because the fuel model is load-sensitive, a route that drops heavier loads earlier can consume less fuel even when
 it is not the shortest — this is why sustainable routing differs from pure shortest-path logic.
 
-## 🚀 Running the Demo
+## 🚀 Running the Project
 ```bash
 pip install -r requirements.txt
+
+# Interactive decision support dashboard
+streamlit run streamlit1_app.py
+
+# Command-line demo
 python main.py
 ```
+The dashboard geocodes addresses with Nominatim/OpenStreetMap and fetches route geometry from the public OSRM
+server, so it needs an internet connection; no API key is required.
 `main.py` evaluates two hand-crafted routes on a sample network (one depot, four customers), then runs the
 optimizer and compares the best result against them. Its output reproduces both columns of the table above: the
 standard baseline is Route A `[0→1→2→3→4→0]` and the GreenLogix route is `[0→1→2→4→3→0]`.
+
+## 📁 Project Structure
+```
+├── streamlit1_app.py          # Streamlit dashboard (Logistics Command Center)
+├── main.py                    # Command-line demo: manual routes vs. optimizer
+├── requirements.txt
+├── docs/
+│   ├── GreenLogix_Report.pdf  # Full project report
+│   └── images/                # Figures used in this README
+└── src/
+    ├── model.py               # Customer, Vehicle, Problem and result data models
+    ├── fuel.py                # Load-sensitive fuel and CO2 model
+    ├── constraints.py         # Capacity, fuel, driving-time and time-window checks
+    ├── solver.py              # Route evaluation and scoring
+    ├── optimizer.py           # Simulated Annealing + 2-opt + randomized search
+    └── services/
+        ├── geocoding_service.py   # Nominatim / OpenStreetMap
+        └── routing_service.py     # OSRM route geometry
+```

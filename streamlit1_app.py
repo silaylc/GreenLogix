@@ -22,11 +22,11 @@ if SRC_PATH not in sys.path:
     sys.path.insert(0, SRC_PATH)
 
 try:
-    from src.model import Customer, Vehicle, Problem
-    from src.solver import evaluate_route
-    from src.optimizer import run_optimizer
-    from src.services.geocoding_service import geocode_address
-    from src.services.routing_service import get_route_for_points
+    from model import Customer, Vehicle, Problem
+    from solver import evaluate_route
+    from optimizer import run_optimizer
+    from services.geocoding_service import geocode_address
+    from services.routing_service import get_route_for_points
 except ImportError as e:
     st.error(f"❌ Kritik Import Hatası: {e}")
     st.info("İpucu: 'src' ve 'services' klasörlerinde __init__.py olduğundan emin olun.")

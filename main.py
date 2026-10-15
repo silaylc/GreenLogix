@@ -24,7 +24,7 @@ Total demand: 260 kg  <  vehicle capacity 500 kg  (always feasible)
 import sys
 import os
 
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "src"))
 
 from model import Customer, Vehicle, Problem
 from solver import evaluate_route
